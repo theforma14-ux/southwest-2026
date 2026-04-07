@@ -132,7 +132,7 @@ export default function App() {
       </header>
 
      <div style={{display: "flex", gap: "10px", padding: "10px 0", flexWrap: "wrap"}}>
-  <button>Attractions</button>
+  <button onClick={() => setActiveTab("Attractions")}>Attractions</button>
   <button>Marriott Hotels</button>
   <button>National Parks</button>
   <button>State Parks</button>
