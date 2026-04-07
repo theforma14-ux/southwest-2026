@@ -122,7 +122,7 @@ export default function App() {
         <div className="hero-grid">
           <div className="info-card"><div className="label">Route</div><div className="value">Denver → Moab → Capitol Reef → Bryce → Zion → Las Vegas</div></div>
           <div className="info-card"><div className="label">Pacing</div><div className="value">Senior-smart, shade-first, low-risk sightseeing</div></div>
-          <div className="info-card"><div className="label">Goal</div><div className="value">Win over Mom with beauty, comfort, and shows</div></div>
+          <div className="info-card"><div className="label">Goal</div><div className="value">Balanced, comfortable, scenic Southwest adventure</div></div>
         </div>
         <div className="control-row">
           <div className="trip-switches">{[8, 9].map((d) => <button key={d} className={`trip-button ${selectedTripLength === d ? "active" : ""}`} onClick={() => setSelectedTripLength(d)}>{d} days</button>)}</div>
