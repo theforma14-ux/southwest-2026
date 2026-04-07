@@ -118,7 +118,7 @@ export default function App() {
   return (
     <div className="shell">
       <header className="hero">
-        <div className="brand"><div className="brand-icon"><Route size={22} /></div><div><h1>Southwest 2026</h1><p>Interactive map, better photos, Marriott picks, Vegas persuasion, and scavenger hunt mode.</p></div></div>
+        <div className="brand"><div className="brand-icon"><Route size={22} /></div><div><h1>Southwest 2026</h1><p>Interactive map, better photos, Marriott picks, trip planning, and scavenger hunt mode.</p></div></div>
         <div className="hero-grid">
           <div className="info-card"><div className="label">Route</div><div className="value">Denver → Moab → Capitol Reef → Bryce → Zion → Las Vegas</div></div>
           <div className="info-card"><div className="label">Pacing</div><div className="value">Senior-smart, shade-first, low-risk sightseeing</div></div>
@@ -130,7 +130,14 @@ export default function App() {
         </div>
       </header>
 
-      <main className="main-grid">
+     <div style={{display: "flex", gap: "10px", padding: "10px 0", flexWrap: "wrap"}}>
+  <button>Attractions</button>
+  <button>Marriott Hotels</button>
+  <button>National Parks</button>
+  <button>State Parks</button>
+  <button>Catholic Sites</button>
+  <button>Restaurants</button>
+</div> <main className="main-grid">
         <section className="panel">
           <SectionTitle icon={Navigation} title="Real interactive map" subtitle="Tap markers for cities, parks, and hotels." />
           <div className="map-wrap">
