@@ -1,26 +1,11 @@
-# Southwest 2026
+# Southwest 2026 v2
 
-Senior-friendly road trip planner website for a Denver → Utah parks → Las Vegas trip.
+Upgraded Vite website with:
+- interactive map using Leaflet / OpenStreetMap
+- expanded photo galleries
+- Marriott hotel integration via official links
+- Vegas culture/show section
+- scavenger hunt tracking
+- trip notebook saved in localStorage
 
-## Run locally
-
-```bash
-npm install
-npm run dev
-```
-
-## Build
-
-```bash
-npm run build
-```
-
-## Deploy on Vercel
-
-1. Create a GitHub repo and upload these files.
-2. Sign in to Vercel.
-3. Click **Add New Project**.
-4. Import the repo.
-5. Click **Deploy**.
-
-Vercel should detect this as a Vite app automatically.
+Push these files to the same GitHub repo and Vercel will rebuild automatically.
