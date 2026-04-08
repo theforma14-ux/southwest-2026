@@ -73,7 +73,7 @@ function ActionLink({ href, label }) {
 export default function App() {
   const [selectedTripLength, setSelectedTripLength] = useState(9);
   const [activeTab, setActiveTab] = useState("Attractions");
-  const [search, setSearch] = useState("");
+  
   const [selectedAttraction, setSelectedAttraction] = useState(attractions[0]);
   const [savedScavenger, setSavedScavenger] = useState([]);
   const [notes, setNotes] = useState("");
