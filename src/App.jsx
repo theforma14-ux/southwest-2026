@@ -98,9 +98,19 @@ export default function App() {
   }, [selectedTripLength, selectedAttraction, savedScavenger, notes]);
 
   const filteredAttractions = useMemo(() => {
-    const q = search.toLowerCase().trim();
-    if (!q) return attractions;
-    return attractions.filter((item) => (`${item.name} ${item.city} ${item.category} ${item.overview}`.toLowerCase()).includes(q));
+  let results = attractions;
+
+  if (activeTab === "Parks") {
+    results = attractions.filter(a => a.category === "National Park");
+  }
+
+  if (activeTab === "StateParks") {
+    results = attractions.filter(a => a.category === "State Park");
+  }
+
+  return results;
+}, [search, activeTab]);
+    
   }, [search]);
 
   const relatedHotels = marriottHotels.filter((h) => h.city === selectedAttraction.city || (selectedAttraction.city === "Bryce Canyon City" && h.city === "Bryce Canyon City"));
