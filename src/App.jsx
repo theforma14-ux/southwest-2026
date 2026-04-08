@@ -133,11 +133,11 @@ export default function App() {
 
      <div style={{display: "flex", gap: "10px", padding: "10px 0", flexWrap: "wrap"}}>
   <button onClick={() => setActiveTab("Attractions")}>Attractions</button>
-  <button>Marriott Hotels</button>
-  <button>National Parks</button>
-  <button>State Parks</button>
-  <button>Catholic Sites</button>
-  <button>Restaurants</button>
+  <button onClick={() => setActiveTab("Hotels")}>Marriott Hotels</button>
+  <button onClick={() => setActiveTab("Parks")}>National Parks</button>
+  <button onClick={() => setActiveTab("StateParks")}>State Parks</button>
+  <button onClick={() => setActiveTab("Catholic")}>Catholic Sites</button>
+  <button onClick={() => setActiveTab("Food")}>Restaurants</button>
 </div> <main className="main-grid">
         <section className="panel">
           <SectionTitle icon={Navigation} title="Real interactive map" subtitle="Tap markers for cities, parks, and hotels." />
